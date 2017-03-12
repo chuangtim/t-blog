@@ -1,0 +1,21 @@
+<%- include("../header")%>
+<div id="signin">
+	<div class="panel">
+		<h4>账号登录</h4>
+		<hr>
+		<div id="form">
+			<form action="/signin" name="login" method="post">
+				<input id="username" type="text" name="username" placeholder="用户账号">
+				<input id="password" type="password" name="password" placeholder="用户密码">
+				<input id="remember" type="checkbox" checked=""><span>记住账号</span>
+				<% if(typeof(error)!=='undefined' && error) {%>
+				<div class="error">
+					<h5><strong><%= error %></strong></h5>
+				</div>
+				<% }%>
+				<input id="submit" type="submit" value="登&nbsp&nbsp录">
+			</form>
+		</div>
+	</div>
+</div>
+<%- include("../footer")%>

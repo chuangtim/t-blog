@@ -1,0 +1,26 @@
+<%- include("../header")%>
+<div id="signup">
+	<div class="panel">
+		<h4>账号注册</h4>
+		<hr>
+		<% if(typeof(success)!=='undefined' && success) {%>
+		<div class="success">
+			<h5><strong><%= success %><a href="/signin">登录?</a></strong></h5>
+		</div>
+		<% }%>
+		<div id="form">
+			<form action="/signup" name="signup" method="post">
+				<input id="username" type="text" name="username" placeholder="用户账号">
+				<input id="password" type="password" name="password" placeholder="用户密码">
+				<input id="password_confirm" type="password" name="confirmPassword" placeholder="确认用户密码">
+				<% if(typeof(error)!=='undefined' && error) {%>
+				<div class="error">
+					<h5><strong><%= error %></strong></h5>
+				</div>
+				<% }%>
+				<input id="submit" type="submit" value="注&nbsp&nbsp册">
+			</form>
+		</div>
+	</div>
+</div>
+<%- include("../footer")%>

@@ -1,0 +1,58 @@
+<%- include("../header")%>
+<div id="sidebar">
+	<div id="person_info">
+		<div id="header">
+			<p>个人信息</p>
+		</div>
+		<div id="content">
+			<div id="user_name">
+				<img src="/image/index.jpg"><span><strong>zhuangtim</strong></span>
+			</div>
+			<div id="user_score">
+				<span><strong>积分:20</strong></span>
+			</div>
+			<div id="userr_signature">
+				<span>“ 这家伙很懒，什么个性签名都没有留下。 ”</span>
+			</div>
+		</div>
+	</div>
+	<div id="catogry">
+		<div id="header">
+			<p>文章列表</p>
+		</div>
+		<div id="content">
+			<ul>
+				<li><a href="#">Nodejs</a><span>(2)</span></li>
+				<li><a href="#">Linux</a><span>(1)</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="main">
+	<div id="header">
+		<a href="#"><h4>angular学习（十五）——Provider</h4></a>
+	</div>
+	<div id="content">
+		<p>Provider简介每个web应用都是由多个对象协作完成的，这些对象需要初始化并连接在一起为app服务。在AngularJS中，app中的大多数对象通过injector服务初始化和连接在一起。Injector创建两种类型的对象，service对象和特别对象。Service对象由开发者自定义api。特别对象则遵照AngularJS框架特定的api，这些对象包括：controller, directiv...</p>
+	</div>
+	<hr>
+	<div id="header">
+		<a href="#"><h4>angular学习（十四）——Module</h4></a>
+	</div>
+	<div id="content">
+		<p>什么是Module你可以把Module当作是个容器，里面包含了controllers, services, filters, directives。为什么使用Module大多数程序都有一个主方法，其他部分的模块都由这个主方法组织在一起。AngularJS却没有所谓的main方法，而由module明确的声明app应该如何bootstrap。这样做有几个优点： 声明式的程序更容易理解 你可以打包代码后形...</p>
+	</div>
+	<hr>
+</div>
+<!-- <div class="container-fluid">
+	<div class="list-group">
+		<a href="#" class="list-group-item active">
+			<h4 class="list-group-item-heading">heldfjkld </h4>
+			<p class="list-group-item-text">
+				this is a new world!,please hold it!!
+			</p>
+		</a>
+	</div>
+</div> -->
+<%- include("../footer")%>
+
